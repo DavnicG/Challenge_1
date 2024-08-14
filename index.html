@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="Javascript" href="app.js">
+    <title>Ecriptador de Texto</title>
+</head>
+<body>
+    <header class="header">
+        <img class="imagen_logo" src="assets/letra-d.png" alt="Logo pagina">
+
+    </header>
+    <body>
+        <div class="presentacion">
+            <div class="presentacion_ingreso">
+                <div class="presentacion_ingreso_texto">
+                    <textarea class="presentacion_ingreso_texto_input" name="" id="Input" placeholder="ingrese el texto aqui"></textarea>
+                    <div class="presentacion_ingreso_texto_advertencia">
+                        <img class="presentacion_ingreso_texto_advertencia_img" src="assets/Group.png" alt="Signo de exclamacion">
+                        <p class="presentacion_ingreso_texto_advertencia_p">Solo letras minusculas y sin acentos</p>
+                    </div>
+                </div>
+                <div class="presentacion_ingreso_botones">
+                    <button onclick="Encriptar();" class="presentacion_ingreso_botones_Encriptar">Encriptar</button>
+                    <button onclick="Desencriptar();" class="presentacion_ingreso_botones_Desencriptar">Desencriptar</button>
+                </div>
+            </div>
+            <div class="Resultado">
+                <div id="Resultado_Imagen" class="Resultado_Imagen" ><img class="imagen" src="assets/Muñeco.png" alt="Persona buscando" ></div>
+                <div class="Resultado_Mensaje">
+                    <h2 id="Respuesta">Ningun mensaje fue encontrado
+                        Ingrese el texto que desees encriptar o desencriptar</h2>
+                </div>
+                <div class="boton_copiar" id="boton_copiar">
+                    <button class="boton_cop" onclick="copiar();">copiar</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <footer>
+        <h3>Desarrollado por David Nicolas Garcia Ramirez</h3>
+        <a class="creditos" href="https://www.flaticon.es/iconos-gratis/letra-d" title="letra d iconos">Letra d iconos creados por riajulislam - Flaticon</a>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
